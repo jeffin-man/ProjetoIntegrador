@@ -8,8 +8,15 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
+    public void credits()
+    {
+               SceneManager.LoadScene(5);
+    }
+
     public void SairJogo()
     {
         Application.Quit();
     }
+
+    
 }
