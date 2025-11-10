@@ -21,7 +21,20 @@ public class NPC_Dialogo : MonoBehaviour
 
     void Update()
     {
-        if (playerInRange && Input.GetKeyDown(KeyCode.E))
+
+        if (playerInRange && !dialogueOpen)
+        {
+            UI.SetActive(true);
+            if (!dialogueOpen && Input.GetKeyDown(KeyCode.E))
+            {
+                dialogueOpen = true;
+                Textbox.SetActive(true);
+                Fala.text = npcText;
+                UI.SetActive(false);
+            }
+            
+        }
+        /*if (playerInRange && Input.GetKeyDown(KeyCode.E))
         {
             dialogueOpen = !dialogueOpen;
 
@@ -33,20 +46,24 @@ public class NPC_Dialogo : MonoBehaviour
             }
             else
             {
-                UI.SetActive(false);
+                UI.SetActive(true);
             }
         }
 
         if (playerInRange && !dialogueOpen)
             UI.SetActive(true);
         else if (!playerInRange)
-            UI.SetActive(false);
+            UI.SetActive(false);*/
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
+        {
+            Debug.Log("enter");
             playerInRange = true;
+            UI.SetActive(true);
+        }
     }
     private void OnTriggerExit(Collider other)
     {

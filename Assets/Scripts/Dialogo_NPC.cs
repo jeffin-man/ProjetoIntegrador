@@ -31,10 +31,16 @@ public class Dialogo_NPC : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        /*if (other.CompareTag("Player"))
         {
+            Debug.Log("enter");
             playerInRange = true;
             UI.SetActive(true);
+        }*/
+
+        if (other.CompareTag("Player"))
+        {
+            Debug.Log("enter");
         }
     }
 
