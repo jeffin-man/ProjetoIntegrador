@@ -997,6 +997,7 @@ GameObject:
   - component: {fileID: 796643641}
   - component: {fileID: 796643640}
   - component: {fileID: 796643639}
+  - component: {fileID: 796643644}
   - component: {fileID: 796643643}
   m_Layer: 0
   m_Name: QuadroXilo2
@@ -1090,14 +1091,35 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 796643638}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.8194893, z: -0, w: 0.5730945}
+  m_LocalRotation: {x: 0.8194873, y: 0, z: 0.5730974, w: 0}
   m_LocalPosition: {x: 662.93, y: 4.88, z: -477.09}
   m_LocalScale: {x: 5.367133, y: 3.9377756, z: 0.1104263}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 110.067, z: 0}
---- !u!114 &796643643
+  m_LocalEulerAnglesHint: {x: 0, y: 110.067, z: 180}
+--- !u!65 &796643643
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 796643638}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000001, y: 1.24, z: 11.41}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &796643644
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1106,9 +1128,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 796643638}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2d7cd3a4efab424eba41ecd45765909, type: 3}
+  m_Script: {fileID: 11500000, guid: 8ff73c753e2df034b937ace0e39374d8, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::StMiniGame3
+  m_EditorClassIdentifier: Assembly-CSharp::NPC_Dialogo
+  npcText: Esta obra apresenta uma cena festiva cheia de movimento, marcada por figuras
+    estilizadas
+  UI: {fileID: 2071261872}
+  Textbox: {fileID: 30890565}
+  Fala: {fileID: 1800629948}
 --- !u!1001 &818762989
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1209,6 +1236,8 @@ GameObject:
   - component: {fileID: 928745247}
   - component: {fileID: 928745246}
   - component: {fileID: 928745245}
+  - component: {fileID: 928745250}
+  - component: {fileID: 928745249}
   m_Layer: 0
   m_Name: QuadroXilo
   m_TagString: Untagged
@@ -1308,6 +1337,44 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 83.427, z: 0}
+--- !u!65 &928745249
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 928745244}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000002, y: 1.24, z: 11.41}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &928745250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 928745244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ff73c753e2df034b937ace0e39374d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPC_Dialogo
+  npcText: "Essa obra \xE9 tributo visual \xE0 tradi\xE7\xE3o e \xE0 energia do S\xE3o
+    Jo\xE3o em Campina Grande."
+  UI: {fileID: 2071261872}
+  Textbox: {fileID: 30890565}
+  Fala: {fileID: 1800629948}
 --- !u!1 &967608592
 GameObject:
   m_ObjectHideFlags: 0
@@ -1729,8 +1796,9 @@ GameObject:
   - component: {fileID: 1323170013}
   - component: {fileID: 1323170012}
   - component: {fileID: 1323170011}
+  - component: {fileID: 1323170015}
   - component: {fileID: 1323170010}
-  - component: {fileID: 1323170009}
+  - component: {fileID: 1323170014}
   m_Layer: 0
   m_Name: QuadroXilo3
   m_TagString: Untagged
@@ -1738,18 +1806,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1323170009
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1323170008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2d7cd3a4efab424eba41ecd45765909, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::StMiniGame3
 --- !u!65 &1323170010
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1769,7 +1825,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.24, z: 11.41}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1323170011
 MeshRenderer:
@@ -1842,6 +1898,44 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -25.285, z: 180}
+--- !u!114 &1323170014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323170008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ff73c753e2df034b937ace0e39374d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPC_Dialogo
+  npcText: "Uma ilustra\xE7\xE3o mostrando uma pessoa mas sem cabe\xE7a \u2014 no
+    lugar dela, h\xE1 nuvens coloridas que se sobrep\xF5em."
+  UI: {fileID: 2071261872}
+  Textbox: {fileID: 30890565}
+  Fala: {fileID: 1800629948}
+--- !u!65 &1323170015
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323170008}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1.0000018}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1324363911
 GameObject:
   m_ObjectHideFlags: 0
@@ -3193,7 +3287,8 @@ GameObject:
   - component: {fileID: 1648734702}
   - component: {fileID: 1648734701}
   - component: {fileID: 1648734700}
-  - component: {fileID: 1648734699}
+  - component: {fileID: 1648734705}
+  - component: {fileID: 1648734704}
   m_Layer: 0
   m_Name: QuadroXilo4
   m_TagString: Untagged
@@ -3201,18 +3296,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1648734699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1648734698}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2d7cd3a4efab424eba41ecd45765909, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::StMiniGame3
 --- !u!65 &1648734700
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3298,13 +3381,51 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1648734698}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.04640134, z: -0, w: 0.9989229}
+  m_LocalRotation: {x: -0.046400297, y: -0, z: 0.99892294, w: 0}
   m_LocalPosition: {x: 682.08, y: 4.38, z: -450.21}
   m_LocalScale: {x: 3.6415896, y: 2.8230011, z: 0.1104263}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -5.319, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -5.319, z: 180}
+--- !u!65 &1648734704
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648734698}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1.24, z: 11.41}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1648734705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648734698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ff73c753e2df034b937ace0e39374d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPC_Dialogo
+  npcText: "Essa obra lembra uma criatura fant\xE1stica vista de frente, transmitindo
+    dinamismo e intensidade."
+  UI: {fileID: 2071261872}
+  Textbox: {fileID: 30890565}
+  Fala: {fileID: 1800629948}
 --- !u!1 &1650092758 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2627681033330835161, guid: 16641fae3d0f54b46a7f5eb7cdaad132, type: 3}
@@ -3475,8 +3596,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
