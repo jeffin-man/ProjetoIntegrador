@@ -2827,10 +2827,10 @@ PrefabInstance:
       addedObject: {fileID: 1650092764}
     - targetCorrespondingSourceObject: {fileID: 2627681033330835161, guid: 16641fae3d0f54b46a7f5eb7cdaad132, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1650092763}
+      addedObject: {fileID: 1650092762}
     - targetCorrespondingSourceObject: {fileID: 2627681033330835161, guid: 16641fae3d0f54b46a7f5eb7cdaad132, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1650092762}
+      addedObject: {fileID: 1650092768}
     - targetCorrespondingSourceObject: {fileID: 5233112405309087440, guid: 16641fae3d0f54b46a7f5eb7cdaad132, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1344829491}
@@ -2936,6 +2936,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2527967450728323328, guid: a8d2fb2618bd6a149b6ba51c16c9bc7e, type: 3}
   m_PrefabInstance: {fileID: 1461008244}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1478924414
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1478924416}
+  - component: {fileID: 1478924415}
+  m_Layer: 0
+  m_Name: SceneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1478924415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1478924414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 944d104edd1aaa54f8c7fa7cb015522b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RestorePlayerPosition
+--- !u!4 &1478924416
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1478924414}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 659.47876, y: 4.98998, z: -507.40588}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1481862369
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3450,21 +3494,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.21, y: 1.5407295, z: 1.3615832}
-  m_Center: {x: 0.52, y: 0.10278534, z: -0.27560762}
---- !u!114 &1650092763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1650092758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a8cec206c352aa41beb9e6716ee5afc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MiniGameSt
-  UI: {fileID: 2071261872}
+  m_Size: {x: 0.81, y: 1.5407295, z: 1.3615832}
+  m_Center: {x: -0, y: 0.49, z: -0.27560762}
 --- !u!65 &1650092764
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3486,6 +3517,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.79120386, y: 1.5407295, z: 1.3615832}
   m_Center: {x: -0.000011309404, y: 0.10278534, z: -0.27560762}
+--- !u!114 &1650092768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650092758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c1034583b5b87345ad76a48ee44ed2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StMiniGame2
+  UI: {fileID: 2071261872}
 --- !u!1 &1667830912 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4111471136592014986, guid: 16641fae3d0f54b46a7f5eb7cdaad132, type: 3}
@@ -4631,3 +4675,4 @@ SceneRoots:
   - {fileID: 1452845387}
   - {fileID: 1324363912}
   - {fileID: 2109066777}
+  - {fileID: 1478924416}
