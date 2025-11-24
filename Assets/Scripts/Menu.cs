@@ -7,6 +7,10 @@ public class Menu : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+    public void CréditosJogo()
+    {
+        SceneManager.LoadScene(2);
+    }
 
     public void SairJogo()
     {

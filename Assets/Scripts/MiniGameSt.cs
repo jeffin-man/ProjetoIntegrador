@@ -29,7 +29,10 @@ public class MiniGameSt : MonoBehaviour
     {
         if (playerInRange && Input.GetKeyDown(KeyCode.E))
         {
-            SceneManager.LoadScene(2);
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            PlayerPositionMemory.savedPosition = player.transform.position;
+            PlayerPositionMemory.hasSavedPosition = true;
+            SceneManager.LoadScene(3);
         }
     }
 
