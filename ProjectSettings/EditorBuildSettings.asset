@@ -12,8 +12,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Fase.unity
     guid: 12a7a2f5a100c984caeb7c584c753db9
   - enabled: 1
-    path: Assets/Scenes/Minigame1.unity
-    guid: 5d85356952903734d97be01ba82d24e4
+    path: "Assets/Scenes/Anima\xE7\xE3o2.unity"
+    guid: 7bce67644ca4c6e44a83bd98edc84bc5
+  - enabled: 1
+    path: "Assets/Scenes/Anima\xE7\xE3o1.unity"
+    guid: e6b78f45d56a1bf4f9616333f5259be2
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
